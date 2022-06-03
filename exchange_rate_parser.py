@@ -33,7 +33,7 @@ rows = []
 for node in root:
   n_date = node.attrib['Date'] if node is not None else None
   n_value = node.find('Value').text if node is not None else None
-  #заполним строки значениями атрибутов
+  # заполним строки значениями атрибутов
   rows.append({'date': n_date,
                'value': n_value})
 
